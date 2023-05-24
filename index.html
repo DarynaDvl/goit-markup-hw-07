@@ -39,6 +39,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
         <address class="contacts">
           <ul class="list contact-list">
             <li class="contact-list-item">
@@ -53,6 +58,78 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="modal-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current-page link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <div class="contacts-and-socials-container">
+            <ul class="mobile-contact-list">
+              <li class="mobile-contact-list-item">
+                <a class="mobile-contact-phone link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+              <li class="mobile-contact-list-item">
+                <a
+                  class="mobile-contact-email contact-item link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <div class="social-container mobile-social-container">
+              <ul class="list mobile-social-list">
+                <li class="social-list-item">
+                  <a href="" class="social-list-link footer-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link footer-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link footer-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link footer-social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -79,7 +156,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="subtitle secondary-section-subtitle">Strategy</h3>
+              <h3 class="secondary-section-subtitle">Strategy</h3>
               <p class="subtitle-descr">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -91,7 +168,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle secondary-section-subtitle">Punctuality</h3>
+              <h3 class="secondary-section-subtitle">Punctuality</h3>
               <p class="subtitle-descr">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -103,7 +180,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle secondary-section-subtitle">Diligence</h3>
+              <h3 class="secondary-section-subtitle">Diligence</h3>
               <p class="subtitle-descr">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -115,7 +192,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle secondary-section-subtitle">Technologies</h3>
+              <h3 class="secondary-section-subtitle">Technologies</h3>
               <p class="subtitle-descr">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -135,7 +212,8 @@
           <ul class="list tertiary-section-list">
             <li class="tertiary-section-list-item">
               <img
-                src="./images/img-1.jpg"
+                srcset="./images/what-are-we-doing/img-1w720.jpg 2x"
+                src="./images/what-are-we-doing/img-1.jpg"
                 alt="computer"
                 width="360"
                 height="300"
@@ -143,7 +221,8 @@
             </li>
             <li class="tertiary-section-list-item">
               <img
-                src="./images/img-2.jpg"
+                srcset="./images/what-are-we-doing/img-2w720.jpg 2x"
+                src="./images/what-are-we-doing/img-2.jpg"
                 alt="smartphone"
                 width="360"
                 height="300"
@@ -151,7 +230,8 @@
             </li>
             <li class="tertiary-section-list-item">
               <img
-                src="./images/img-3.jpg"
+                srcset="./images/what-are-we-doing/img-3w720.jpg 2x"
+                src="./images/what-are-we-doing/img-3.jpg"
                 alt="laptop and smartphone"
                 width="360"
                 height="300"
@@ -164,13 +244,18 @@
       <!-- OUR TEAM SECTION  -->
 
       <section class="section our-team-section">
-        <div class="container">
+        <div class="container tablet-container">
           <h2 class="section-title our-team-section-title">Our Team</h2>
           <ul class="list our-team-list">
             <li class="our-team-list-item">
               <img
-                src="./images/employees/mark-guerrero.jpg"
-                alt="Mark Guerrero"
+                srcset="
+                  ./images/employees/employee-1.jpg     264w,
+                  ./images/employees/employee-1w528.jpg 528w
+                "
+                sizes="(min-width:428px) 264px, 100vw"
+                src="./images/employees/employee-1.jpg"
+                alt="employee-1"
                 width="264"
                 height="260"
               />
@@ -211,8 +296,13 @@
             </li>
             <li class="our-team-list-item">
               <img
-                src="./images/employees/tom-ford.jpg"
-                alt="Tom Ford"
+                srcset="
+                  ./images/employees/employee-2.jpg     264w,
+                  ./images/employees/employee-2w528.jpg 528w
+                "
+                sizes="(min-width:428px) 264px, 100vw"
+                src="./images/employees/employee-2.jpg"
+                alt="employee-2"
                 width="264"
                 height="260"
               />
@@ -254,8 +344,13 @@
             </li>
             <li class="our-team-list-item">
               <img
-                src="./images/employees/camila-garcia.jpg"
-                alt="Camila Garcia"
+                srcset="
+                  ./images/employees/employee-3.jpg     264w,
+                  ./images/employees/employee-3w528.jpg 528w
+                "
+                sizes="(min-width:428px) 264px, 100vw"
+                src="./images/employees/employee-3.jpg"
+                alt="employee-3"
                 width="264"
                 height="260"
               />
@@ -297,8 +392,13 @@
             </li>
             <li class="our-team-list-item">
               <img
-                src="./images/employees/daniel-wilson.jpg"
-                alt="Daniel Wilson"
+                srcset="
+                  ./images/employees/employee-4.jpg     264w,
+                  ./images/employees/employee-4w528.jpg 528w
+                "
+                sizes="(min-width:428px) 264px, 100vw"
+                src="./images/employees/employee-4.jpg"
+                alt="employee-4"
                 width="264"
                 height="260"
               />
@@ -344,7 +444,7 @@
       <!-- CUSTOMERS SECTION  -->
 
       <section class="section customers-section">
-        <div class="container customers-section-container">
+        <div class="container tablet-container">
           <h2 class="section-title customers-section-title">Customers</h2>
           <ul class="list customers-list">
             <li class="customers-list-item">
@@ -397,7 +497,7 @@
     <!-- FOOTER -->
 
     <footer class="footer-section">
-      <div class="container footer-container">
+      <div class="container footer-container tablet-container">
         <div class="logo-and-paragraph">
           <a
             class="link logo footer-logotype"
@@ -411,7 +511,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="social-container">
+        <div class="social-container footer-social-container">
           <p class="footer-par">Social media</p>
           <ul class="list social-list footer-social-list">
             <li class="social-list-item">
@@ -560,5 +660,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
